@@ -1,0 +1,21 @@
+{
+  "application": "dinghy",
+  "pipelines": [
+    {
+      "application": "dinghy",
+      "keepWaitingPipelines": false,
+      "limitConcurrent": true,
+      "name": "wait-dinghy-repo2",
+      "stages": [
+        {
+          "name": "Wait",
+          "refId": "1",
+          "requisiteStageRefIds": [],
+          "type": "wait",
+          "waitTime": 30
+        }
+      ],
+      "triggers": []
+    }
+  ]
+}
