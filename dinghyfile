@@ -4,7 +4,7 @@
     {
         "keepWaitingPipelines": false,
         "limitConcurrent": true,
-        "pipelineName": "wait-dinghy-repo2",
+        "pipelineName": "wait-dinghy-repo2-test",
         "parameterConfig": [
           {
             "default": "what",
