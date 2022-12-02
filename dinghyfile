@@ -1,67 +1,67 @@
-	{
+{
 	"application": "dinghy2",
 	"pipelines": [
+	{
+		"keepWaitingPipelines": false,
+		"limitConcurrent": true,
+		"pipelineName": "wait-dinghy-repo2-test",
+		"parameterConfig": [
 		{
-			"keepWaitingPipelines": false,
-			"limitConcurrent": true,
-			"pipelineName": "wait-dinghy-repo2-test",
-			"parameterConfig": [
+			"default": "what",
+			"description": "what",
+			"hasOptions": true,
+			"label": "onetest",
+			"name": "onetest",
+			"options": [
 			{
-				"default": "what",
-				"description": "what",
-				"hasOptions": true,
-				"label": "onetest",
-				"name": "onetest",
-				"options": [
-				{
-					"value": "what1"
-				},
-				{
-					"value": "what2"
-				},
-				{
-					"value": "what3"
-				},
-				{
-					"value": "what4"
-				}
-				],
-				"pinned": true,
-				"required": true
+				"value": "what1"
 			},
 			{
-				"default": "test",
-				"description": "test",
-				"hasOptions": true,
-				"label": "test",
-				"name": "test",
-				"options": [
-				{
-					"value": "test1"
-				},
-				{
-					"value": "test2"
-				},
-				{
-					"value": "test3"
-				}
-				],
-				"pinned": false,
-				"required": true
-			}
-			],
-			"schema": "1",
-			"spelEvaluator": "v4",
-			"stages": [
+				"value": "what2"
+			},
 			{
-				"isNew": true,
-				"name": "Wait",
-				"refId": "1",
-				"requisiteStageRefIds": [],
-				"type": "wait",
-				"waitTime": 30
+				"value": "what3"
+			},
+			{
+				"value": "what4"
 			}
 			],
-			"triggers": []
+			"pinned": true,
+			"required": true
+		},
+		{
+			"default": "test",
+			"description": "test",
+			"hasOptions": true,
+			"label": "test",
+			"name": "test",
+			"options": [
+			{
+				"value": "test1"
+			},
+			{
+				"value": "test2"
+			},
+			{
+				"value": "test3"
+			}
+			],
+			"pinned": false,
+			"required": true
 		}
+		],
+		"schema": "1",
+		"spelEvaluator": "v4",
+		"stages": [
+		{
+			"isNew": true,
+			"name": "Wait",
+			"refId": "1",
+			"requisiteStageRefIds": [],
+			"type": "wait",
+			"waitTime": 30
+		}
+		],
+		"triggers": []
 	}
+}
