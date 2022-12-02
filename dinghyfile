@@ -1,7 +1,9 @@
 {
-  "application": "dinghy2",
-  "pipeline": {
+"application": "dinghy2",
+"pipelines": [
+  {
     "application": "dinghy2",
+    "name": "my-pipeline-name",
     "keepWaitingPipelines": false,
     "pipelineName": "testtest-new"
     "name": "testtest-new",
