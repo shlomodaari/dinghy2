@@ -1,7 +1,6 @@
 {
   "id": "83e4c024-6a67-49f5-8eba-bc219ecbc65c",
   "metadata": {
-    "description": "A pipeline template derived from pipeline \"test\" in application \"dinghytestoyni\"",
     "name": "cold-cow-13",
     "owner": "shlomo.daari@armory.io",
     "scopes": [
