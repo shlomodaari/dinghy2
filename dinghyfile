@@ -2,20 +2,66 @@
   "application": "dinghy2",
   "pipelines": [
     {
-      "application": "dinghy2",
-      "keepWaitingPipelines": false,
-      "limitConcurrent": true,
-      "name": "wait-dinghy-repo2",
-      "stages": [
-        {
-          "name": "Wait",
-          "refId": "1",
-          "requisiteStageRefIds": [],
-          "type": "wait",
-          "waitTime": 30
-        }
-      ],
-      "triggers": []
-    }
-  ]
-}
+      {
+        "keepWaitingPipelines": false,
+        "limitConcurrent": true,
+        "name": "wait-dinghy-repo2",
+        "parameterConfig": [
+          {
+            "default": "what",
+            "description": "what",
+            "hasOptions": true,
+            "label": "onetest",
+            "name": "onetest",
+            "options": [
+              {
+                "value": "what1"
+              },
+              {
+                "value": "what2"
+              },
+              {
+                "value": "what3"
+              },
+              {
+                "value": "what4"
+              }
+            ],
+            "pinned": true,
+            "required": true
+          },
+          {
+            "default": "test",
+            "description": "test",
+            "hasOptions": true,
+            "label": "test",
+            "name": "test",
+            "options": [
+              {
+                "value": "test1"
+              },
+              {
+                "value": "test2"
+              },
+              {
+                "value": "test3"
+              }
+            ],
+            "pinned": false,
+            "required": true
+          }
+        ],
+        "schema": "1",
+        "spelEvaluator": "v4",
+        "stages": [
+          {
+            "isNew": true,
+            "name": "Wait",
+            "refId": "1",
+            "requisiteStageRefIds": [],
+            "type": "wait",
+            "waitTime": 30
+          }
+        ],
+        "triggers": []
+      }
