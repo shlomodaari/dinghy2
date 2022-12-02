@@ -1,13 +1,8 @@
 {
-  "id": "83e4c024-6a67-49f5-8eba-bc219ecbc65c",
-  "metadata": {
-    "name": "cold-cow-13",
-    "owner": "shlomo.daari@armory.io",
-    "scopes": [
-      "global"
-    ]
-  },
+   "application": "dinghy2",
+   },
   "pipeline": {
+    "application": "dinghy2",
     "keepWaitingPipelines": false,
     "pipelineName": "testtest-new"
     "limitConcurrent": true,
