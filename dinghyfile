@@ -1,67 +1,76 @@
 {
-	"application": "dinghy2",
-	"pipelines": [
-	{
-		"keepWaitingPipelines": false,
-		"limitConcurrent": true,
-		"pipelineName": "wait-dinghy-repo2-test",
-		"parameterConfig": [
-		{
-			"default": "what",
-			"description": "what",
-			"hasOptions": true,
-			"label": "onetest",
-			"name": "onetest",
-			"options": [
-			{
-				"value": "what1"
-			},
-			{
-				"value": "what2"
-			},
-			{
-				"value": "what3"
-			},
-			{
-				"value": "what4"
-			}
-			],
-			"pinned": true,
-			"required": true
-		},
-		{
-			"default": "test",
-			"description": "test",
-			"hasOptions": true,
-			"label": "test",
-			"name": "test",
-			"options": [
-			{
-				"value": "test1"
-			},
-			{
-				"value": "test2"
-			},
-			{
-				"value": "test3"
-			}
-			],
-			"pinned": false,
-			"required": true
-		}
-		],
-		"schema": "1",
-		"spelEvaluator": "v4",
-		"stages": [
-		{
-			"isNew": true,
-			"name": "Wait",
-			"refId": "1",
-			"requisiteStageRefIds": [],
-			"type": "wait",
-			"waitTime": 30
-		}
-		],
-		"triggers": []
-	}
+  "id": "83e4c024-6a67-49f5-8eba-bc219ecbc65c",
+  "metadata": {
+    "description": "A pipeline template derived from pipeline \"test\" in application \"dinghytestoyni\"",
+    "name": "cold-cow-13",
+    "owner": "shlomo.daari@armory.io",
+    "scopes": [
+      "global"
+    ]
+  },
+  "pipeline": {
+    "keepWaitingPipelines": false,
+    "pipelineName": "testtest-new"
+    "limitConcurrent": true,
+    "parameterConfig": [
+      {
+        "default": "what",
+        "description": "what",
+        "hasOptions": true,
+        "label": "onetest",
+        "name": "onetest",
+        "options": [
+          {
+            "value": "what1"
+          },
+          {
+            "value": "what2"
+          },
+          {
+            "value": "what3"
+          },
+          {
+            "value": "what4"
+          }
+        ],
+        "pinned": true,
+        "required": true
+      },
+      {
+        "default": "test",
+        "description": "test",
+        "hasOptions": true,
+        "label": "test",
+        "name": "test",
+        "options": [
+          {
+            "value": "test1"
+          },
+          {
+            "value": "test2"
+          },
+          {
+            "value": "test3"
+          }
+        ],
+        "pinned": false,
+        "required": true
+      }
+    ],
+    "schema": "1",
+    "spelEvaluator": "v4",
+    "stages": [
+      {
+        "name": "Wait",
+        "refId": "1",
+        "requisiteStageRefIds": [],
+        "type": "wait",
+        "waitTime": 30
+      }
+    ],
+    "triggers": []
+  },
+  "protect": false,
+  "schema": "v2",
+  "variables": []
 }
