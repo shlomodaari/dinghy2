@@ -4,6 +4,7 @@
     "application": "dinghy2",
     "keepWaitingPipelines": false,
     "pipelineName": "testtest-new"
+    "name": "testtest-new",
     "limitConcurrent": true,
     "parameterConfig": [
       {
@@ -63,7 +64,5 @@
     ],
     "triggers": []
   },
-  "protect": false,
-  "schema": "v2",
   "variables": []
 }
