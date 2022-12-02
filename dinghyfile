@@ -2,7 +2,6 @@
   "application": "dinghy2",
   "pipelines": [
     {
-      {
         "keepWaitingPipelines": false,
         "limitConcurrent": true,
         "name": "wait-dinghy-repo2",
